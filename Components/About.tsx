@@ -3,15 +3,18 @@ import React from "react";
 
 const About = () => {
   return (
-    <div className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
-      <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center">
+    <div id="about" className="bg-[#121121] pb-[3rem] pt-[4rem] md:pt-[8rem]">
+      <div className="flex flex-col items-center">
+        <h1 className="heading">
+          About <span className="text-yellow-400">Me</span>
+        </h1>
+      </div>
+      <div className="grid grid-cols-1 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] items-center mt-[4rem] md:mt-[8rem]">
         <div>
           {/* <h1 className="text-[20px] font-bold uppercase text-[#55e6a5] mb-[1rem]">
             ABOUT ME
           </h1> */}
-          <p className="text-white text-[28px] sm:text-[33px] md:text-[45px] font-bold uppercase">
-            About <span className="text-yellow-400">Me</span>
-          </p>
+
           <h1 className="text-[20px] font-bold uppercase text-[#55e6a5] mb-[1rem]">
             Dynamic Visions
           </h1>

@@ -15,7 +15,7 @@ const showcases = [
     name: "Easy Accounting System - Cloud",
     description:
       "Easy Cloud is a cloud storage service that allows users to store their files and access them from anywhere. It is a simple and user-friendly platform that provides a secure and reliable storage solution for individuals and businesses.",
-    image: "/images/all-project/Easy Cloud/Shortcut page Easy Cloud.jpg",
+    image: "/images/all-project/Easy Cloud/Shortcut-page-Easy-Cloud.jpg",
     category: "Web Development",
     githubLink: "",
     demoLink: "https://public.easycloud.co.id/",
@@ -25,7 +25,7 @@ const showcases = [
     name: "CIMB Niaga Merchant Business Information System",
     description:
       "EDC is a cloud storage service that allows users to store their files and access them from anywhere. It is a simple and user-friendly platform that provides a secure and reliable storage solution for individuals and businesses.",
-    image: "/images/all-project/EDC/Login EDC.jpg",
+    image: "/images/all-project/EDC/Login-EDC.jpg",
     category: "Web Development",
     githubLink: "",
     demoLink: "",
@@ -35,9 +35,9 @@ const showcases = [
     name: "Yogyakarta Fingerboard Community Blog",
     description:
       "Ykfb Blog is a cloud storage service that allows users to store their files and access them from anywhere. It is a simple and user-friendly platform that provides a secure and reliable storage solution for individuals and businesses.",
-    image: "/images/all-project/Ykfb Blog/About Us.jpg",
+    image: "/images/all-project/Ykfb Blog/About-Us.jpg",
     category: "Self Projects",
-    githubLink: "",
+    githubLink: "https://github.com/dhaanisaputra/ykfbcomm-blog",
     demoLink: "https://ykfbcommunity.my.id/",
   },
   {
@@ -45,9 +45,9 @@ const showcases = [
     name: "Portfolio",
     description:
       "Portfolio is a cloud storage service that allows users to store their files and access them from anywhere. It is a simple and user-friendly platform that provides a secure and reliable storage solution for individuals and businesses.",
-    image: "/images/all-project/Portfolio SPA/Home Portfolio.jpg",
+    image: "/images/all-project/Portfolio SPA/Home-Portfolio.jpg",
     category: "Self Projects",
-    githubLink: "",
+    githubLink: "https://github.com/dhaanisaputra/my-project-portfolio",
     demoLink: "",
   },
   {
@@ -55,9 +55,9 @@ const showcases = [
     name: "E-commerce Online Shop",
     description:
       "E-commerce Online Shop is a cloud storage service that allows users to store their files and access them from anywhere. It is a simple and user-friendly platform that provides a secure and reliable storage solution for individuals and businesses.",
-    image: "/images/all-project/EDC/Login EDC.jpg",
+    image: "/images/all-project/EDC/Login-EDC.jpg",
     category: "Self Projects",
-    githubLink: "",
+    githubLink: "https://github.com/dhaanisaputra/ecomm-toko",
     demoLink: "",
   },
   {
@@ -65,7 +65,7 @@ const showcases = [
     name: "ATM Bussines Information System - CIMB Niaga",
     description:
       "ATM Bussines is a cloud storage service that allows users to store their files and access them from anywhere. It is a simple and user-friendly platform that provides a secure and reliable storage solution for individuals and businesses.",
-    image: "/images/all-project/ATM Bisnis/login Atm.jpeg",
+    image: "/images/all-project/ATM Bisnis/login-Atm.jpeg",
     category: "Web Development",
     githubLink: "",
     demoLink: "",
@@ -138,17 +138,27 @@ const Projects = () => {
                 className="border-t flex items-center justify-between py-2"
               >
                 <a
-                  href="#"
+                  href={items.githubLink || "#"}
                   target="_blank"
-                  className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  // className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  className={`p-2 mx-4 rounded-lg duration-300 ${
+                    items.githubLink
+                      ? "bg-gray-300 hover:bg-gray-400 hover:text-white"
+                      : "bg-gray-500 cursor-not-allowed opacity-50"
+                  }`}
                 >
                   <FaGithub />
                 </a>
 
                 <a
-                  href="#"
+                  href={items.demoLink || "#"}
                   target="_blank"
-                  className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  // className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  className={`p-2 mx-4 rounded-lg duration-300 ${
+                    items.demoLink
+                      ? "bg-gray-300 hover:bg-gray-400 hover:text-white"
+                      : "bg-gray-500 cursor-not-allowed opacity-50"
+                  }`}
                 >
                   <FaArrowUpRightFromSquare />
                 </a>
@@ -219,17 +229,27 @@ const Projects = () => {
                 className="border-t flex items-center justify-between py-2"
               >
                 <a
-                  href="#"
+                  href={items.githubLink || "#"}
                   target="_blank"
-                  className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  // className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  className={`p-2 mx-4 rounded-lg duration-300 ${
+                    items.githubLink
+                      ? "bg-gray-300 hover:bg-gray-400 hover:text-white"
+                      : "bg-gray-500 cursor-not-allowed opacity-50"
+                  }`}
                 >
                   <FaGithub />
                 </a>
 
                 <a
-                  href="#"
+                  href={items.demoLink || "#"}
                   target="_blank"
-                  className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  // className="bg-gray-300 p-2 mx-4 rounded-lg hover:bg-gray-400 hover:text-white duration-300"
+                  className={`p-2 mx-4 rounded-lg duration-300 ${
+                    items.demoLink
+                      ? "bg-gray-300 hover:bg-gray-400 hover:text-white"
+                      : "bg-gray-500 cursor-not-allowed opacity-50"
+                  }`}
                 >
                   <FaArrowUpRightFromSquare />
                 </a>
@@ -240,7 +260,10 @@ const Projects = () => {
       });
   }, [filter]);
   return (
-    <div className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[1rem]">
+    <div
+      id="projects"
+      className="bg-[#02050a] pt-[4rem] md:pt-[8rem] pb-[1rem]"
+    >
       <h1 className="heading">
         Proj<span className="text-yellow-400">ects</span>
       </h1>
@@ -254,7 +277,7 @@ const Projects = () => {
               data-filter={items}
               className={`${
                 items === filter &&
-                "text-green-300 font-semibold hover:text-green-300 py-2 text-[24px] transition-all"
+                "text-yellow-400 font-semibold hover:text-yellow-200 py-2 text-[24px] transition-all"
               } capitalize font-medium hover:text-gray-400 transition-all text-gray-500 py-2 text-[24px]`}
               // className="filter-btn text-gray-500 font-semibold hover:text-gray-400 py-2 text-[24px] transition-all"
             >

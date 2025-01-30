@@ -7,7 +7,7 @@ const Footer = () => {
       {/* <div className="grid border-b-[1px] pb-[6rem] border-gray-400 grid-cols-1 lg:grid-cols-3 md:grid-cols-2 w-[80%] mx-auto gap-[3rem] text-center"></div> */}
       <div className="w-[80%] mt-[2rem] mx-auto grid grid-cols-1 md:grid-cols-2 items-center justify-between">
         <div>
-          <div className="flex space-x-10 text-neutral-100 text-lg opacity-20">
+          <div className="flex space-x-10 text-white text-lg ">
             © 2025 dhaanisaputra
           </div>
           {/* <div className="text-[18px] mb-[2rem] md:mb-0 text-white opacity-20">

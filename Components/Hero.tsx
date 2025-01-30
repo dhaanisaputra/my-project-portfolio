@@ -23,9 +23,27 @@ const Hero = () => {
           <div className="mt-[2rem] text-[20px] text-white flex items-center space-x-4">
             Let`s Connect!
             <div className="flex ml-[1rem] space-x-4">
-              <IoLogoInstagram className="text-[24px] cursor-pointer" />
-              <IoLogoLinkedin className="text-[24px] cursor-pointer" />
-              <IoLogoGithub className="text-[24px] cursor-pointer" />
+              <a
+                href="https://www.instagram.com/dhaanisaputra/"
+                target="_blank"
+                className="text-[24px] "
+              >
+                <IoLogoInstagram />
+              </a>
+              <a
+                href="https://www.linkedin.com/in/mochamad-dani-saputra-436531290/"
+                target="_blank"
+                className="text-[24px] cursor-pointer"
+              >
+                <IoLogoLinkedin className="text-[24px]" />
+              </a>
+              <a
+                href="https://github.com/dhaanisaputra"
+                target="_blank"
+                className="text-[24px] cursor-pointer"
+              >
+                <IoLogoGithub />
+              </a>
             </div>
           </div>
           <div className="mt-[2rem] flex flex-col space-y-6 sm:space-y-0 sm:flex sm:flex-row items-center sm:space-x-6">

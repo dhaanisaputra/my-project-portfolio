@@ -1,10 +1,11 @@
+"use client";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 
 const Contacts = () => {
   const form = useRef<HTMLFormElement>(null);
   const [message, setMessage] = useState("");
-  const [isSuccess, setIsSuccess] = useState<boolean | null>(null);
+  const [isSuccess, setIsSuccess] = useState<boolean>(false);
 
   const sendEmail = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
@@ -99,14 +100,14 @@ const Contacts = () => {
               />
             </form>
             {/* Popup Notification */}
-            {isSuccess !== null && (
+            {isSuccess !== false && (
               <div className="fixed top-0 left-0 w-full h-full flex items-center justify-center bg-black bg-opacity-50">
                 <div className="bg-white p-6 rounded-lg shadow-lg text-center">
                   <p className={isSuccess ? "text-green-600" : "text-red-600"}>
                     {message}
                   </p>
                   <button
-                    onClick={() => setIsSuccess(null)}
+                    onClick={() => setIsSuccess(false)}
                     className="mt-4 bg-gray-500 text-white py-2 px-4 rounded"
                   >
                     Close

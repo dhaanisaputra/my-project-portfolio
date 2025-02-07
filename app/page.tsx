@@ -1,7 +1,6 @@
 "use client";
 
 import About from "@/Components/About";
-import Contacts from "@/Components/Contacts";
 import Footer from "@/Components/Footer";
 import Hero from "@/Components/Hero";
 import MobileNav from "@/Components/MobileNav";
@@ -9,9 +8,10 @@ import Nav from "@/Components/Nav";
 import Projects from "@/Components/Projects";
 import Services from "@/Components/Services";
 import Skills from "@/Components/Skills";
+import ContactMe from "@/Components/ContactMe";
 import AOS from "aos";
 import "aos/dist/aos.css"; // You can also use <link> for styles
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 const HomePage = () => {
   const [nav, setNav] = useState(false);
@@ -57,7 +57,7 @@ const HomePage = () => {
           <Services />
           <Skills />
           <Projects />
-          <Contacts />
+          <ContactMe />
           <Footer />
         </div>
       </div>

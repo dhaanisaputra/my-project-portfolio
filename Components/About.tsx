@@ -39,8 +39,10 @@ const About = () => {
           <Image
             src="/images/Free Vector _ Programmer working at computer.jpg"
             alt="about"
-            layout="fill"
-            objectFit="contain"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            // objectFit="contain"
+            style={{ objectFit: "contain" }}
             className="relative z-[11] w-[100%] h-[100%] object-contain"
           />
           <div className="absolute w-[100%] h-[100%] z-[10] bg-[#55e3a5] top-[-2rem] right-[-2rem]"></div>

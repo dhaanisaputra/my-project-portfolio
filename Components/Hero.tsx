@@ -59,7 +59,8 @@ const Hero = () => {
           <Image
             src="/images/person-2.jpg"
             alt="user"
-            layout="fill"
+            fill
+            sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
             className="object-cover rounded-full"
           />
         </div>

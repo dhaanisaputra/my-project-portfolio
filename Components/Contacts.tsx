@@ -28,7 +28,7 @@ const Contacts = () => {
       form.current.reset(); // Reset form setelah berhasil
     } catch (error) {
       console.error("FAILED...", error);
-      setMessage("Failed to send email! Please try again.");
+      setMessage("Failed to send email. Please try again.");
       setIsSuccess(false);
     }
   };

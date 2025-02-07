@@ -27,7 +27,7 @@ const About = () => {
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
               Doloremque, quas corporis eius modi alias ex voluptates eum
               repudiandae ipsam vel facere dolore possimus totam molestias
-              fugiat. Laudantium esse suscipit perspiciatis!
+              fugiat. Laudanatium esse suscipit perspiciatis!
             </p>
           </div>
         </div>
